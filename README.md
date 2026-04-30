@@ -1,3 +1,7 @@
+# Introduction
+
+Use this system if you have a large amount of bank records that need to be reconciled with your system records. It is specifically created for Life and Short Term insurance companies that process transactions using Debit Orders. The platform is optimized for high-volume, high-speed reconciliation and is ideal for organizations seeking automation and accuracy in financial matching workflows.
+
 # Bank & System File Matching Dashboard
 
 This is a React + Vite admin dashboard for matching and reconciling Bank and System files. It provides tools for uploading, mapping, and matching transactions, with a focus on financial period management.
