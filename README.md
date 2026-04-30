@@ -107,6 +107,7 @@ The `MatchTypeSetting` model (see `backend/app/models/match_type_setting.py`) st
 
 **Usage:**
 - The matching engine will use the active `MatchTypeSetting` configurations to determine how transactions are matched.
+- Matching can be performed as **one-to-one** (single debit to single credit) or **one-to-many** (single debit to multiple credits, or vice versa), depending on the match type configuration and business rules.
 
 
 
