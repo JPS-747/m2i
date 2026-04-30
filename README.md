@@ -12,6 +12,57 @@ This is a React + Vite admin dashboard for matching and reconciling Bank and Sys
 - Modular, responsive UI with reusable components
 - Environment-based API configuration
 
+# Customizing File Import and Match Type Settings
+
+## Customizing File Import (Selecting Columns & Using Functions)
+
+When importing files (System or Bank) via the API (`POST /files/system/import` or `POST /files/bank/import`), you can:
+
+- **Select Columns:**
+  - The import process allows you to map CSV columns to database fields. You can specify which columns to import and how they should be mapped. This is typically handled in the frontend (e.g., via a column mapping UI) and sent to the backend as part of the import request.
+
+- **Use Additional Functions:**
+  - You can apply transformation functions to columns during import. For example, you might want to trim whitespace, convert date formats, or apply custom logic to certain fields. These functions can be defined in the backend and referenced in the import configuration.
+
+**Example (frontend):**
+- The import dialog lets you select which CSV columns map to which database fields.
+- You can optionally specify transformation functions for each column (e.g., `toUpperCase`, `parseDate`).
+
+**Example (backend):**
+- The backend receives a mapping and transformation config, applies the functions, and imports the data accordingly.
+
+## Configuring a MatchType Setting
+
+The `MatchTypeSetting` model (see `backend/app/models/match_type_setting.py`) stores configuration for different match types used in reconciliation.
+
+**Key fields:**
+- `key`: Unique identifier for the match type.
+- `title`: Human-readable name.
+- `description`: Description of the match type.
+- `type`: The type/category of match (e.g., "exact", "fuzzy").
+- `parameters`: JSON string for additional settings (e.g., which columns to match, thresholds, etc.).
+- `is_active`: Whether this match type is currently enabled.
+
+**How to configure:**
+1. **Create or update a MatchTypeSetting** via the admin UI or directly in the database.
+2. **Set the `parameters` field** with a JSON object specifying:
+   - Which columns to use for matching.
+   - Any thresholds or custom logic.
+   - Example:
+     ```json
+     {
+       "columns": ["amount", "date", "reference"],
+       "threshold": 0.95,
+       "customFunction": "normalizeReference"
+     }
+     ```
+3. **Activate or deactivate** the match type as needed.
+
+**Usage:**
+- The matching engine will use the active `MatchTypeSetting` configurations to determine how transactions are matched.
+
+
+
 ## Getting Started
 
 ### Prerequisites
