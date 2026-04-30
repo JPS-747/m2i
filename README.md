@@ -10,7 +10,9 @@ This is a React + Vite admin dashboard for matching and reconciling Bank and Sys
 - **Superfast performance**: Match 500,000 transactions in under 5 minutes
 - **Database flexibility**: Works with MySQL, PostgreSQL, or SQLite
 
-- Upload Bank and System files (credits matches credits or debits matches debits) or System and System Files (credit matches debits or vice versa)
+- Upload Multiple files into records
+    Bank and System files (credits matches credits or debits matches debits) or 
+    System and System Files (credit matches debits or vice versa)
 - Map columns and apply transformations
 - Match transactions using configurable panels
 - **Custom transformations**: Define and chain custom transformation functions for data import
