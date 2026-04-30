@@ -6,6 +6,8 @@ This is a React + Vite admin dashboard for matching and reconciling Bank and Sys
 
 - Upload and preview Bank and System files
 - Map columns and apply transformations
+- **Custom transformations**: Define and chain custom transformation functions for data import
+- **Matching relationship (One-To-One or One-To-Many)**: Support for both one-to-one and one-to-many transaction matching
 - Match transactions using configurable panels
 - View matching progress and statistics in real time
 - Admin dashboard with period actions (open, close, activate)
