@@ -1,0 +1,112 @@
+:root {
+  --bg: #0f172a;
+  --surface: #111a2e;
+  --surface-alt: #15213b;
+  --text: #e7eefc;
+  --muted: #9baac7;
+  --border: #263553;
+  --primary: #4e8dff;
+  --primary-dark: #2f6fed;
+  --on-primary: #ffffff;
+  --success: #2ac37b;
+  --success-dark: #1da35f;
+  --danger: #d64545;
+  --danger-hover: #b63434;
+  --warning: #f5a524;
+  --button-secondary: #475569;
+  --button-secondary-hover: #334155;
+  --shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
+  --sidebar-bg-1: #0c1324;
+  --sidebar-bg-2: #121d35;
+  --sidebar-text: #f8fbff;
+  --sidebar-link: #d7e5ff;
+  --sidebar-link-hover: rgba(255, 255, 255, 0.16);
+
+  --banner-success-bg: #0f2e22;
+  --banner-success-text: #9ef0c7;
+  --banner-success-border: #1f684b;
+
+  --banner-error-bg: #341818;
+  --banner-error-text: #ffc7c7;
+  --banner-error-border: #7d2f2f;
+
+  --banner-info-bg: #162741;
+  --banner-info-text: #bdd8ff;
+  --banner-info-border: #30558b;
+
+  --badge-open-bg: #1e3a8a;
+  --badge-open-text: #93c5fd;
+  --badge-active-bg: #15803d;
+  --badge-active-text: #86efac;
+  --badge-closed-bg: #991b1b;
+  --badge-closed-text: #fca5a5;
+
+  font-family:
+    Inter,
+    Segoe UI,
+    system-ui,
+    -apple-system,
+    sans-serif;
+  color: var(--text);
+}
+
+[data-theme="light"] {
+  --bg: #f6f8fc;
+  --surface: #ffffff;
+  --surface-alt: #eef3ff;
+  --text: #1f2a44;
+  --muted: #6a748a;
+  --border: #dbe2f3;
+  --primary: #2f6fed;
+  --primary-dark: #1e4fb5;
+  --on-primary: #ffffff;
+  --danger: #d64545;
+  --danger-hover: #b63434;
+  --success: #1d9f63;
+  --success-dark: #16a34a;
+  --warning: #f5a524;
+  --button-secondary: #64748b;
+  --button-secondary-hover: #475569;
+  --shadow: 0 8px 28px rgba(31, 42, 68, 0.08);
+  --sidebar-bg-1: #1f2a44;
+  --sidebar-bg-2: #253760;
+  --sidebar-text: #ffffff;
+  --sidebar-link: #e9efff;
+  --sidebar-link-hover: rgba(255, 255, 255, 0.12);
+
+  --banner-success-bg: #eaf8f1;
+  --banner-success-text: #11613b;
+  --banner-success-border: #c5ebd6;
+
+  --banner-error-bg: #fff0f0;
+  --banner-error-text: #7d2222;
+  --banner-error-border: #ffd0d0;
+
+  --banner-info-bg: #edf4ff;
+  --banner-info-text: #214d9d;
+  --banner-info-border: #d3e3ff;
+
+  --badge-open-bg: #dbeafe;
+  --badge-open-text: #1e40af;
+  --badge-active-bg: #dcfce7;
+  --badge-active-text: #15803d;
+  --badge-closed-bg: #fee2e2;
+  --badge-closed-text: #991b1b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}

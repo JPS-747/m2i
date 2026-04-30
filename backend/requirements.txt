@@ -1,0 +1,18 @@
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+SQLAlchemy==2.0.40
+PyMySQL==1.1.1
+python-dotenv==1.1.0
+pydantic==2.11.3
+python-multipart==0.0.20
+pytest==8.3.5
+
+# Authentication
+python-jose==3.5.0
+httpx==0.28.1
+passlib[bcrypt]>=1.7.4
+bcrypt==4.2.1
+psycopg2==2.9.12
+pandas==3.2.0
+
+
