@@ -3,6 +3,8 @@
 This is a React + Vite admin dashboard for matching and reconciling Bank and System files. It provides tools for uploading, mapping, and matching transactions, with a focus on financial period management.
 
 ## Features
+- **Superfast performance**: Match 500,000 transactions in under 5 minutes
+- **Database flexibility**: Works with MySQL, PostgreSQL, or SQLite
 
 - Upload and preview Bank and System files
 - Map columns and apply transformations
